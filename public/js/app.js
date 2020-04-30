@@ -44466,6 +44466,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['ruta'],
@@ -44669,7 +44672,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                             case 'registrar':
                                 {
                                     this.modal = 1;
-                                    this.tituloModal = 'Registrar Categoría';
+                                    this.tituloModal = 'Crear categoría';
                                     this.nombre = '';
                                     this.descripcion = '';
                                     this.tipoAccion = 1;
@@ -44705,14 +44708,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("main", { staticClass: "main" }, [
-    _vm._v("\n    Breadcrumb\n    "),
-    _c("ol", { staticClass: "breadcrumb" }),
+    _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "container-fluid" }, [
       _c("div", { staticClass: "card" }, [
         _c("div", { staticClass: "card-header" }, [
           _c("i", { staticClass: "fa fa-align-justify" }),
-          _vm._v(" Categorías\n                "),
+          _vm._v(" Administrar Categorías\n                "),
           _c(
             "button",
             {
@@ -44825,7 +44827,7 @@ var render = function() {
                 _c(
                   "button",
                   {
-                    staticClass: "btn btn-primary",
+                    staticClass: "btn btn-success",
                     attrs: { type: "submit" },
                     on: {
                       click: function($event) {
@@ -44841,9 +44843,12 @@ var render = function() {
           _vm._v(" "),
           _c(
             "table",
-            { staticClass: "table table-bordered table-striped table-sm" },
+            {
+              staticClass:
+                "table table-bordered table-striped table-sm table-hover table-responsive"
+            },
             [
-              _vm._m(0),
+              _vm._m(1),
               _vm._v(" "),
               _c(
                 "tbody",
@@ -45031,7 +45036,8 @@ var render = function() {
         _c(
           "div",
           {
-            staticClass: "modal-dialog modal-success modal-lg",
+            staticClass:
+              "modal-dialog modal-dialog-centered modal-success modal-lg",
             attrs: { role: "document" }
           },
           [
@@ -45191,7 +45197,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("Cerrar")]
+                  [_c("i", { staticClass: "cil-x" }), _vm._v(" Cerrar")]
                 ),
                 _vm._v(" "),
                 _vm.tipoAccion == 1
@@ -45206,7 +45212,7 @@ var render = function() {
                           }
                         }
                       },
-                      [_vm._v("Guardar")]
+                      [_c("i", { staticClass: "cil-save" }), _vm._v(" Guardar")]
                     )
                   : _vm._e(),
                 _vm._v(" "),
@@ -45222,7 +45228,10 @@ var render = function() {
                           }
                         }
                       },
-                      [_vm._v("Actualizar")]
+                      [
+                        _c("i", { staticClass: "cil-sync" }),
+                        _vm._v(" Actualizar")
+                      ]
                     )
                   : _vm._e()
               ])
@@ -45234,6 +45243,24 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "navbar navbar-light bg-success d-flex justify-content-center"
+      },
+      [
+        _c("h2", { staticClass: "text-align-center" }, [
+          _c("i", { staticClass: "cil-library" }),
+          _vm._v(" Categorías")
+        ])
+      ]
+    )
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

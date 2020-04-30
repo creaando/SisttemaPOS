@@ -7,14 +7,15 @@
                     {{-- <li class="nav-title">
                         CreaPOS
                     </li> --}}
+                    
                     <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-bag"></i> Almacén</a>
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="cil-clipboard"></i> Almacén</a>
                         <ul class="nav-dropdown-items">
                             <li @click="menu=1" class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon-bag"></i> Categorías</a>
+                                <a class="nav-link" href="#"><i class="cil-library"></i> Categorías</a>
                             </li>
                             <li @click="menu=2" class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon-bag"></i> Artículos</a>
+                                <a class="nav-link" href="#"><i class="cil-chevron-right"></i> Artículos</a>
                             </li>
                         </ul>
                     </li>
@@ -22,7 +23,7 @@
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-wallet"></i> Compras</a>
                         <ul class="nav-dropdown-items">
                             <li @click="menu=3" class="nav-item">
-                                <a class="nav-link" href="#"><i class="icon-wallet"></i> Ingresos</a>
+                                <a class="nav-link" href="#"><i class="cil-basket"></i> Ingresos</a>
                             </li>
                             <li @click="menu=4" class="nav-item">
                                 <a class="nav-link" href="#"><i class="icon-notebook"></i> Proveedores</a>
@@ -62,6 +63,17 @@
                             </li>
                         </ul>
                     </li>
+                    {{-- <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="cil-cog"></i> Ajustes</a>
+                        <ul class="nav-dropdown-items">
+                            <li @click="menu=13" class="nav-item">
+                                <a class="nav-link" href="#"><i class="cil-factory"></i> Empresa</a>
+                            </li>
+                            <li @click="menu=14" class="nav-item">
+                                <a class="nav-link" href="#"><i class="cil-layers"></i> Unidades</a>
+                            </li>
+                        </ul>
+                    </li> --}}
                     <li @click="menu=11" class="nav-item">
                         <a class="nav-link" href="#"><i class="icon-book-open"></i> Ayuda <span class="badge badge-danger">PDF</span></a>
                     </li>
